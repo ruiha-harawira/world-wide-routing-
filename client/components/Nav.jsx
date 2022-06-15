@@ -7,7 +7,7 @@ function Nav() {
 let continentsArr = Object.keys(continents)
 
   return (
-    <div>
+    <nav>
       <h2>Nav</h2>
       <ul>
       <Link to='/'><li>Home</li></Link>
@@ -17,7 +17,7 @@ let continentsArr = Object.keys(continents)
       
     })}
       </ul>
-    </div>
+    </nav>
   )
 }
 
