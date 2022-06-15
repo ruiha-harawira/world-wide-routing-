@@ -12,12 +12,15 @@ function Continent() {
 
   const {name} = useParams()
   const country = continents[name].countries
-  // const image = continents[name.images]
+  const image = continents[name].image
  return (
    <div>
- <h1>Hello</h1>
+ <h1>{name}</h1>
+ <img src={`/images/${image}`} alt={`${name}`}/>
  <ul>
- 
+ {country.map(country => {
+          return <li key={country.code}>{country.name}</li>
+ })}
  </ul>
    </div>
 
