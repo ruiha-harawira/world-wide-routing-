@@ -15,6 +15,7 @@ let continentsArr = Object.keys(continents)
       return <Link to = {`/continents/${continent}`}key = {index}><li > {continent}</li>
       </Link>
       
+      
     })}
       </ul>
     </nav>
